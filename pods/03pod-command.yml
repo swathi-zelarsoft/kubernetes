@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sample2
+  name: sample3
 spec:
   containers:
    - name: debug
@@ -10,5 +10,5 @@ spec:
      command:
       - sleep
       - "100000"
-    - name: ping
-      image: swathipottabathini/zs-ping
+   - name: ping
+     image: swathipottabathini/zs-ping
