@@ -11,4 +11,4 @@ spec:
       - sleep
       - "100000"
     - name: ping
-      image: swathipottabthini/zs-ping
+      image: swathipottabathini/zs-ping
