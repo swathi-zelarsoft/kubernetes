@@ -12,3 +12,5 @@ spec:
       - "100000"
    - name: ping
      image: swathipottabathini/zs-ping
+      args:
+       - "yahoo.com"
