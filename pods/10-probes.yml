@@ -5,4 +5,18 @@ metadata:
 spec:
   containers:
     - name: readiness
-      image: swathipottabathini/zs01-readiness
+      image: rkalluru/zs01-readiness
+      readinessProbe:
+        exec:
+          command:
+            - cat
+            - /sample.txt
+        initialDelaySeconds: 5
+        periodSeconds: 5
+      livenessProbe:
+        exec:
+          command:
+            - cat
+            - /sample.txt
+        initialDelaySeconds: 90
+        periodSeconds: 5
