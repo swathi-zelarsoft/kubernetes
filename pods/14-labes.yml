@@ -29,3 +29,19 @@ spec:
       command:
         - sleep
         - "10000000"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: orange-annotations
+  annotations:
+    store.invetory/fruit-name: apple
+    country/imported: USA
+spec:
+  containers:
+    - name: centos
+      image: centos:7
+      command:
+        - sleep
+        - "10000000"
+---
