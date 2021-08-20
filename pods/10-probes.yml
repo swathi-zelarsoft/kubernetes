@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: readiness
-      image: rkalluru/zs01-readiness
+      image: swathipottabathini/zs01-readiness
       readinessProbe:
         exec:
           command:
