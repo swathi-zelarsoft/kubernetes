@@ -5,6 +5,8 @@ metadata:
 spec:
  containers:
    - image: node
+     name: node
+     hello
    - image: nginx
      name: client
      lifecycle:
