@@ -4,6 +4,7 @@ metadata:
  name: sample8
 spec:
  containers:
+   - image: node
    - image: nginx
      name: client
      lifecycle:
